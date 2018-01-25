@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<Configuration packages="com.bmw.cd.logging">
+  <Properties>
+    <Property name="appID">AM-TEMPLATE</Property>
+    <Property name="hub">TEST</Property>
+    <Property name="environment">CI</Property>
+  </Properties>
+    <Appenders>
+        <Console name="ConsoleAppender" target="SYSTEM_OUT">
+            <PatternLayout pattern="%-6level %cdllAttributes %n"/>
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <AsyncLogger name="AsyncLogger" level="INFO">
+            <AppenderRef ref="ConsoleAppender"/>
+        </AsyncLogger>
+        <Root level="INFO">
+            <AppenderRef ref="ConsoleAppender"/>
+        </Root>
+    </Loggers>
+    
+</Configuration>

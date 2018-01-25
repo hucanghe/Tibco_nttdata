@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="AM-TEMPLATE" transaction-type="JTA">
+        <jta-data-source>jdbc/am-template</jta-data-source>
+        <shared-cache-mode>ENABLE_SELECTIVE</shared-cache-mode>
+        <properties>
+            <property name="eclipselink.orm.validate.schema" value="true"/>
+            <property name="eclipselink.logging.level" value="WARNING"/>
+            <!--  this will create tables at runtime if they dont exist
+            <property name="eclipselink.ddl-generation" value="drop-and-create-tables"/>
+            <property name="javax.persistence.schema-generation.database.action" value="create"/>
+            
+            -->
+            <!--  this is the default anyways
+            <property name="javax.persistence.schema-generation.create-source" value="metadata"/>
+            -->
+        </properties>
+    </persistence-unit>
+</persistence>

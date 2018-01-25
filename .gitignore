@@ -1,0 +1,10 @@
+*.project
+*.classpath
+*.settings
+*/target
+*/target/*
+swagger.json
+*.iml
+*.idea
+*.releaseBackup
+/war/nbproject/
