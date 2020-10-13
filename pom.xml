@@ -74,7 +74,7 @@
         <fish.payara.extras.payara-embedded-all.version>4.1.2.172</fish.payara.extras.payara-embedded-all.version>
 
         <!-- Test -->
-        <junit.version>4.12</junit.version>
+        <junit.version>4.13.1</junit.version>
 
         <!-- BMW libraries -->
         <com.bmw.cd.log.library.version>6.1.3</com.bmw.cd.log.library.version>
